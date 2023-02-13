@@ -1,6 +1,6 @@
 import fs from 'fs'
 
-const readStream = fs.createReadStream('readableStream\\powder-day.mp4')
+const readStream = fs.createReadStream('powder-day.mp4')
 
 readStream.on('data', (chunk) => {
   console.log('reading little chunk ', chunk)

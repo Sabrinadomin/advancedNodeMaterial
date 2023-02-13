@@ -4,7 +4,7 @@ import http from  'http'
 http.createServer((req, res) => {
 
     res.writeHeader(200, { 'Content-Type': 'video/mp4' });
-    fs.createReadStream('streams\\streamIntro\\powder-day.mp4')
+    fs.createReadStream('powder-day.mp4')
         .pipe(res)
         .on('error', console.error);
 

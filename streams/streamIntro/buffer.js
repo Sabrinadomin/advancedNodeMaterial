@@ -3,7 +3,7 @@ import http from 'http'
 
 http.createServer((req, res) => {
 
-    fs.readFile('streams\\streamIntro\\powder-day.mp4', (error, data) => {
+    fs.readFile('powder-day.mp4', (error, data) => {
         if (error) {
             console.log('hmmmm: ', error);
         }

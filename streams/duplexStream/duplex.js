@@ -1,7 +1,7 @@
 import { createReadStream, createWriteStream} from 'fs'
 import { PassThrough, Duplex } from 'stream'
 
-const readStream = createReadStream('streams/readableStream/powder-day.mp4')
+const readStream = createReadStream('powder-day.mp4')
 const writeStream = createWriteStream('streams/duplexStream/copy.mp4')
 
 class Throttle extends Duplex {
